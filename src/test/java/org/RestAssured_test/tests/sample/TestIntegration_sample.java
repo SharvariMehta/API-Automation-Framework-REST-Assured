@@ -1,31 +1,30 @@
 package org.RestAssured_test.tests.sample;
 
-import jdk.jfr.Description;
-import org.testng.*;
+import io.qameta.allure.Owner;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestIntegration_sample {
 
-    @Description("TC#INT1 - Step 1 : Verify that booking can be Created")
-    @Test(groups = "qa", priority = 1)
+    @Test(description = "TC#INT1 - Step 1 : Verify that booking can be Created", groups = "qa", priority = 1)
+    @Owner("SharvariMehta")
     public void testCreateBooking() {
         Assert.assertTrue(true);
     }
 
-    @Test(groups = "qa", priority = 2)
-    @Description("TC#INT1 - Step 2 : Verify Booking by Booking ID")
+    @Test(description = "TC#INT1 - Step 2 : Verify the Booking by Booking ID", groups = "qa", priority = 2)
+    @Owner("SharvariMehta")
     public void verifyCreateBooking() {
         Assert.assertTrue(true);
     }
-
-    @Test(groups = "qa", priority = 3)
-    @Description("TC#INT1 - Step 3 : Verify that booking can be updated")
+    @Test(description = "TC#INT1 - Step 3 : Verify that booking can be updated", groups = "qa", priority = 2)
+    @Owner("SharvariMehta")
     public void updateCreateBooking() {
         Assert.assertTrue(true);
     }
 
-    @Test(groups = "qa", priority = 4)
-    @Description("TC#INT1 - Step 4 : Verify that booking can be Deleted")
+    @Test(description = "TC#INT1 - Step 4 : Verify that booking can be Deleted", groups = "qa", priority = 2)
+    @Owner("SharvariMehta")
     public void deleteCreateBooking() {
         Assert.assertTrue(true);
     }
