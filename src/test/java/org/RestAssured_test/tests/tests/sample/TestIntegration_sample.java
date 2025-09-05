@@ -1,4 +1,4 @@
-package org.RestAssured_test.tests.sample;
+package org.RestAssured_test.tests.tests.sample;
 
 import io.qameta.allure.Owner;
 import org.testng.Assert;
