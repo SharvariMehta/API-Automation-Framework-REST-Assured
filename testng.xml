@@ -3,12 +3,10 @@
     <suite name="All Test Suite">
         <test verbose="2" preserve-order="true" name="C:/Users/Sharvari Mehta/IdeaProjects/API_Automation_Framework_REST-Assured">
             <classes>
-                <class name="org.RestAssured_test.tests.sample.TestIntegration_sample">
+                <class name="org.RestAssured_test.tests.tests.crud.TestCreateBooking">
                     <methods>
-                        <include name="testCreateBooking"/>
-                        <include name="verifyCreateBooking"/>
-                        <include name="updateCreateBooking"/>
-                        <include name="deleteCreateBooking"/>
+                        <include name="testCreateBookingPOST_Positive"/>
+
                     </methods>
                 </class>
             </classes>

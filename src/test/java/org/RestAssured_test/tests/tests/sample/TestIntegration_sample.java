@@ -17,6 +17,7 @@ public class TestIntegration_sample {
     public void verifyCreateBooking() {
         Assert.assertTrue(true);
     }
+
     @Test(description = "TC#INT1 - Step 3 : Verify that booking can be updated", groups = "qa", priority = 2)
     @Owner("SharvariMehta")
     public void updateCreateBooking() {

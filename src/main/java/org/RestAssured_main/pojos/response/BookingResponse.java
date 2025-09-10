@@ -2,6 +2,7 @@ package org.RestAssured_main.pojos.response;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.RestAssured_main.pojos.request.Booking;
+import org.RestAssured_main.pojos.request.Bookingdates;
 
 public class BookingResponse {
 
@@ -27,6 +28,10 @@ public class BookingResponse {
     public void setBooking(Booking booking) {
         this.booking = booking;
     }
+
+
+
+
 
 }
 

@@ -1,10 +1,9 @@
 package org.RestAssured_test.tests.asserts;
 
 import io.restassured.response.Response;
-
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.testng.Assert.assertEquals;
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 
 public class AssertActions {
@@ -19,5 +18,20 @@ public class AssertActions {
     public void verifyStatusCode(Response response, Integer expected) {
         assertEquals(response.getStatusCode(),expected);
     }
+    public void verifyStringKey(String keyExpect,String keyActual){
+        // AssertJ
+        assertThat(keyExpect).isNotNull();
+        assertThat(keyExpect).isNotBlank();
+        assertThat(keyExpect).isEqualTo(keyActual);
 
+    }
+
+    public void verifyStringKeyNotNull(Integer keyExpect){
+        // AssertJ
+        assertThat(keyExpect).isNotNull();
+    }
+    public void verifyStringKeyNotNull(String keyExpect){
+        // AssertJ
+        assertThat(keyExpect).isNotNull();
+    }
 }
