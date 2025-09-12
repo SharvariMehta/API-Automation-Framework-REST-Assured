@@ -2,17 +2,22 @@ package org.RestAssured_main.pojos.response;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.RestAssured_main.pojos.request.Booking;
-import org.RestAssured_main.pojos.request.Bookingdates;
 
 public class BookingResponse {
 
     @SerializedName("bookingid")
     @Expose
-    private Integer bookingid;
+    private Booking booking;
+    public Booking getBooking() {
+        return booking;
+    }
+    public void setBooking(Booking booking) {
+        this.booking = booking;
+    }
+
     @SerializedName("booking")
     @Expose
-    private Booking booking;
-
+    private Integer bookingid;
     public Integer getBookingid() {
         return bookingid;
     }
@@ -20,18 +25,5 @@ public class BookingResponse {
     public void setBookingid(Integer bookingid) {
         this.bookingid = bookingid;
     }
-
-    public Booking getBooking() {
-        return booking;
-    }
-
-    public void setBooking(Booking booking) {
-        this.booking = booking;
-    }
-
-
-
-
-
 }
 

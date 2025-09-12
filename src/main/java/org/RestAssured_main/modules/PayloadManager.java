@@ -29,10 +29,11 @@ public class PayloadManager {
         String jsonStringBooking = gson.toJson(booking);
         return jsonStringBooking;
 
+
     }
     // Convert the JSON String to Java Object so that we can verify response Body
     // DeSerialization
-    public BookingResponse bookingResponseJava(String responseString) {
+    public BookingResponse bookingResponse(String responseString) {
         gson = new Gson();
         BookingResponse bookingResponse = gson.fromJson(responseString, BookingResponse.class);
         return bookingResponse;
